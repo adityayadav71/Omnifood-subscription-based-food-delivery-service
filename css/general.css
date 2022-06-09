@@ -31,9 +31,12 @@ Paragraph default: 1.6
 - Shades: #cf711f
 - Accents:
 - Greys:
+#888
+#767676 (Lighest grey allowed on #fff)
+#6f6f6f (Lightest grey allowed on #fdf2e9)
 #555
 #333
-#6f6f6f (Lightest grey allowed on #fdf2e9)
+
 
 --- 05 SHADOWS
 box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
