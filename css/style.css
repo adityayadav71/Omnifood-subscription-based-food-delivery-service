@@ -11,6 +11,7 @@
   /* Because we want it to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
@@ -25,7 +26,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -57,6 +58,25 @@
   border-radius: 9px;
   color: #fff;
   background-color: #cf711f;
+}
+
+/* MOBILE */
+
+.btn-mobile-nav {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /*************************/
@@ -339,6 +359,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
+  padding: 1.6rem;
 }
 
 .gallery-item {
