@@ -27,13 +27,16 @@ Paragraph default: 1.6
 - Tints: 
 #fdf2e9
 #fae5d3
+#eb984e
 - Shades: #cf711f
 - Accents:
 - Greys:
 #555
 #333
+#6f6f6f (Lightest grey allowed on #fdf2e9)
 
 --- 05 SHADOWS
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 06 BORDER-RADIUS
 
@@ -81,6 +84,14 @@ body {
   column-gap: 6.4rem;
 }
 
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -91,6 +102,10 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
@@ -135,6 +150,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -144,6 +160,11 @@ body {
   text-decoration: none;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
   /* Put transition on original "state" */
   /* transition: background-color 0.3s; */
@@ -176,6 +197,18 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
 .link:link,
 .link:visited {
   display: inline-block;
@@ -191,6 +224,33 @@ body {
   color: #cf711f;
   border-bottom: 1px solid transparent;
 }
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #45260a;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
 /* HELPER/SETTING CLASSES */
 
 /* Use this Helper class to add margin-right to specific elements */
