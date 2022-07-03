@@ -8,7 +8,7 @@ Most people are very busy with their jobs, family and friends, and other importa
 
 ## Notes
 
-1. This is a **frontend** project I made along with the [HTML/CSSS Course on Udemy by Jonas Schmedtmann](https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/).
+1. This is a **frontend** project I made along with this [HTML/CSS Course on Udemy by Jonas Schmedtmann](https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/).
 2. This is a **one page website** with 7 main sections and a header and footer
 
    - Hero Section
